@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -20,3 +21,27 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<div th:replace="fragments/fragment :: title"></div>
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+</head>
+<body>
+	<div th:replace="fragments/fragment :: header"></div>
+	<h3 th:text="'NPM = ' + ${student.npm}">Student NPM</h3>
+	<h3 th:text="'Name = ' + ${student.name}">Student Name</h3>
+	<h3 th:text="'GPA = ' + ${student.gpa}">Student GPA</h3>
+
+	<h3>Kuliah yang diambil</h3>
+	<ul th:each="course,iterationStatus: ${student.courses}">
+		<li th:text="${course.name} + '-' + ${course.credits} + ' sks'">
+			Nama kuliah-X SKS
+		</li>
+	</ul>
+
+</body>
+</html>
+
+>>>>>>> 6640bf1b12fccbd85435ec4057b8c6c47a9a3909

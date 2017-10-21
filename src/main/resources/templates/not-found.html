@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
@@ -9,3 +10,16 @@
        	<h3 th:text="'NPM = ' + ${npm}">Student NPM</h3>
     </body>
 </html>
+=======
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+       	<div th:replace="fragments/fragment :: title"></div>
+    </head>
+    <body>
+    	<div th:replace="fragments/fragment :: header"></div>
+    	<h1>Student not found</h1>
+       	<h3 th:text="'NPM = ' + ${npm}">Student NPM</h3>
+    </body>
+</html>
+>>>>>>> 6640bf1b12fccbd85435ec4057b8c6c47a9a3909
